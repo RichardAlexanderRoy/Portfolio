@@ -6,8 +6,6 @@ export default function About() {
     return (
         <div className={styles.page}>
             <main className={styles.main}>
-                <h1>Get in touch with me!</h1>
-                <h2>Email: <span>richard.alex.roy@gmail.com</span></h2>
             </main>
         </div>
     );
