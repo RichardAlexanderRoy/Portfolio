@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <div>
             <nav className="Nav">
-                <a href="/about">About</a>
+                <a href="./about">About</a>
             </nav>
         </div>
     );
