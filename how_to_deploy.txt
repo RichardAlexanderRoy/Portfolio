@@ -1,0 +1,5 @@
+//locally:
+rm -rf .next out
+npm run build
+npm run predeploy
+npm run deploy
