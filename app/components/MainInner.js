@@ -3,12 +3,10 @@ import styles from "../page.module.css";
 const base = process.env.NODE_ENV === 'production' ? '/Portfolio' : '';
 
 
-export default function Footer() {
+export default function MainInner({children}) {
     return (
         <div>
-            <nav className="Nav">
-                <a href={`${base}/about/`}>About</a>
-            </nav>
+            {children}
         </div>
     );
 }
