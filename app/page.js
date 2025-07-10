@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import MainOuter from "./components/MainOuter.js";
-import MainInner from "./components/MainInner.js";
+import MainOuter from "./components/main/MainOuter.js";
+import MainInner from "./components/main/MainInner.js";
 
 export default function Home() {
   return (

@@ -1,0 +1,13 @@
+.mainOuter {
+    border: 1px solid rgb(0,255,155);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.mainOuter .title {
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+    border-bottom: 1px solid rgb(0,255,155);
+    width: fit-content;
+}

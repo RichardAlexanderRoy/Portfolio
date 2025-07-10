@@ -1,12 +1,11 @@
 import React from 'react';
-import styles from "../page.module.css";
+import styles from "./mainInner.module.css";
 const base = process.env.NODE_ENV === 'production' ? '/Portfolio' : '';
 
 
-export default function MainOuter({children, title}) {
+export default function MainInner({children}) {
     return (
-        <div>
-            <h1>{title}</h1>
+        <div className={styles.mainInner}>
             {children}
         </div>
     );
