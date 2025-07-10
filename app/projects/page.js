@@ -3,7 +3,7 @@ import styles from "../page.module.css";
 import MainOuter from "../components/main/MainOuter.js";
 import MainInner from "../components/main/MainInner.js";
 import CodeBlock from "../components/codeBlock/CodeBlock.js";
-
+const base = process.env.NODE_ENV === 'production' ? '/Portfolio' : '';
 
 export default function About() {
     return (
@@ -37,8 +37,8 @@ export default function About() {
                 <MainOuter title="GuessNum">
                     <MainInner>
                         <h2>Skills: </h2>
-                        <CodeBlock filePath="/projectCode/GuessNum/main.swift" language="swift"/>
-                        <CodeBlock filePath="/projectCode/GuessNum/main.swift" language="swift"/>
+                        <CodeBlock filePath={base+"/projectCode/GuessNum/main.swift"} language="swift"/>
+                        <CodeBlock filePath={base+"/projectCode/GuessNum/main.swift"} language="swift"/>
                     </MainInner>
                 </MainOuter>
             </main>
