@@ -6,10 +6,32 @@ import styles from "./codeBlock.module.css";
 const base = process.env.NODE_ENV === 'production' ? '/Portfolio' : '';
 
 
-export default function CodeBlock({ filePath, language }) {
+export default function CodeBlock({ filePath, visible}) {
     const [code, setCode] = useState('');
+    const [isVisible, setIsVisible] = useState(visible);
+    
     //extract just the filename from the path
     const fileName = filePath.split('/').pop();
+    //check file type
+    const suffix = fileName.split('.').pop();
+    let language = '';
+    switch (suffix) {
+        case 'js':
+            language = 'javascript';
+            break;
+        case 'py':
+            language = 'python';
+            break;
+        case 'c++':
+            language = 'cpp';
+            break;
+        case 'ts':
+            language = 'typescript';
+            break;
+        default:
+            language = suffix;
+    }
+
     //load code from file
     useEffect(() => {
         fetch(filePath)
@@ -20,9 +42,14 @@ export default function CodeBlock({ filePath, language }) {
     return (
         <>
             <h3>{fileName}</h3>
-            <SyntaxHighlighter className={styles.codeBlock} language={language} style={oneDark}>
-                {code}
-            </SyntaxHighlighter>
+            <button onClick={() => setIsVisible(!isVisible)}>
+                {isVisible ? ('Hide Code') : 'Show Code'}
+            </button>
+            {isVisible && (
+                <SyntaxHighlighter className={styles.codeBlock} language={language} style={oneDark}>
+                    {code}
+                </SyntaxHighlighter>
+            )}
         </>
     );
 }
