@@ -19,7 +19,7 @@ export default function About() {
     const craftWarCode = ["main.py", "entity.py", "spritesheet.py", "projectile.py", "melee.py", "ranged.py"];
     const textBasedRPGCode = ["Game.cpp", "Game.hpp", "main.cpp", "Location.cpp", "Location.hpp", "Item.cpp", "Item.hpp", "NPC.cpp", "NPC.hpp"];
     //const thisSiteCode = [base+"components/"+"ProjectCodeWrapper.js", base+"components/"+"CodeBlock.js", base+"layout.js",base+"page.js", base+"about/"+"page.js", base+"projects/"+"page.js", base+"skills/"+"page.js", base+"contact/"+"page.js"];
-    const thisSiteCode = ["ProjectCodeWrapper.js", "CodeBlock.js", "Header.js", "MainOuter.js", "MainInner.js", "pageProjects.js",];
+    const thisSiteCode = ["ProjectCodeWrapper.js", "CodeBlock.js", "layout.js", "pageHome.js", "pageAbout.js", "pageProjects.js", "pageSkills.js", "pageContact.js"];
 
     return (
         <div className={styles.page}>
@@ -28,6 +28,11 @@ export default function About() {
                     <MainInner>
                         <h2>Skills:</h2>
                         <ProjectCodeWrapper fileArr={completePaths("Chess", chessCode)} />
+                    </MainInner>
+                </MainOuter>
+                <MainOuter title="2D-DnD-RPG">
+                    <MainInner>
+                        <h2>Skills:</h2>
                     </MainInner>
                 </MainOuter>
                 <MainOuter title="This Site!">
