@@ -11,9 +11,12 @@ export default function About() {
                 <MainOuter title="About Me:">
                     <MainInner>
                         <h1>Education:</h1>
+                        <h2>Grand Valley State University - Expected December 2025, GPA - 3.706</h2>
+                        <h2>Bachelor of Science - Major in Computer Science, Minor in Mathematics</h2>
                     </MainInner>
                     <MainInner>
                         <h1>Work Experience:</h1>
+                        <h2></h2>
                     </MainInner>
                     <MainInner>
                         <h1>Hobbies:</h1>
