@@ -7,10 +7,9 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <MainOuter title="Hi! Welcome to my Website!">
+        <MainOuter title="Welcome to Richard Roy's Portfolio!">
           <MainInner>
-            <h2>My name is Richard Roy</h2>
-            <h3>I am a passionate computer science student, currently seeking an Internship for the Fall semester</h3>
+            <p>I am a passionate computer science student, currently seeking an Internship for the Fall semester</p>
             <p>If you would like to see some examples of my skills, you have come to the right place. Under the projects page, I have some examples of projects I have done, some from university projects, but also some personal projects, and freelance projects.</p>
             <p>If you would prefer to look at some projects that demonstrate a specific skill or programming language, you can navigate to the skills page, where you will find some links to specific projects that demonstrate my skills in specific areas.</p>
           </MainInner>

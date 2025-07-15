@@ -1,12 +1,12 @@
 'use client'
-import React, { useEffect, useState } from 'react';
+import React, { useLayoutEffect, useEffect, useState } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import styles from "./codeBlock.module.css";
 const base = process.env.NODE_ENV === 'production' ? '/Portfolio' : '';
 
 
-export default function CodeBlock({ filePath, visible}) {
+export default function CodeBlock({ filePath, visible, onLoad}) {
     const [code, setCode] = useState('');
     const [isVisible, setIsVisible] = useState(visible);
     
@@ -41,6 +41,12 @@ export default function CodeBlock({ filePath, visible}) {
         .then(res => res.text())
         .then(setCode)
     }, [filePath])
+
+    useLayoutEffect(() => {
+        if(code && onLoad) {
+            onLoad();
+        }
+    }, [code])
 
     return (
         <div className={styles.codeBlock}>
