@@ -16,7 +16,7 @@ export default function About() {
                     </MainInner>
                     <MainInner>
                         <h1>Work Experience:</h1>
-                        <h2></h2>
+                        <h2>Freelance Web Developer</h2>
                     </MainInner>
                     <MainInner>
                         <h1>Hobbies:</h1>
