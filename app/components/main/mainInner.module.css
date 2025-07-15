@@ -4,5 +4,9 @@
     width: fit-content;
     border: 1px solid rgba(39, 37, 37, 0.75);
     border-radius: 5px;
+    padding: 5px 25px;
+}
 
+.mainInner h2 {
+    font-size: 2em;
 }

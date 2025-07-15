@@ -1,7 +1,10 @@
 .mainOuter {
     border: 1px solid rgb(0,255,155);
     border-radius: 5px;
-    padding: 15px;
+    padding: 15px 100px;
+    width: fit-content;
+    /* max-width: 75%; */
+    margin: 0px auto 25px;
 }
 
 .mainOuter .title {
@@ -10,4 +13,9 @@
     margin: 0px auto;
     border-bottom: 1px solid rgb(0,255,155);
     width: fit-content;
+    font-size: 3em;
+}
+
+.mainOuter p {
+    font-size: 1.5em;
 }

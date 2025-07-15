@@ -21,7 +21,8 @@ export default function ProjectCodeWrapper({ fileArr }) {
     // child func takes in path to one file
 
     return (
-        <>
+        <div className={styles.container}>
+            <h2>Excerpt Files: </h2>
             {fileArr.map((file) => {
                 if (file === fileArr[0]) {
                     return(<CodeBlock key={file} filePath={file} visible={true} />)
@@ -29,6 +30,6 @@ export default function ProjectCodeWrapper({ fileArr }) {
                     return(<CodeBlock key={file}  filePath={file} visible={false} />)
                 }
             })}
-        </>
+        </div>
     );
 }

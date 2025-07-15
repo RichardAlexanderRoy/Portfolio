@@ -43,16 +43,16 @@ export default function CodeBlock({ filePath, visible}) {
     }, [filePath])
 
     return (
-        <>
+        <div className={styles.codeBlock}>
             <h3>{fileName}</h3>
             <button onClick={() => setIsVisible(!isVisible)}>
                 {isVisible ? ('Hide Code') : 'Show Code'}
             </button>
             {isVisible && (
-                <SyntaxHighlighter className={styles.codeBlock} language={language} style={oneDark}>
+                <SyntaxHighlighter style={oneDark} customStyle={{margin: '5px auto', overflow: 'scroll', maxHeight: '500px', width: 'fit-content', maxWidth: '100%', padding: '5px 0px', border: '1px solid green'}} language={language}>
                     {code}
                 </SyntaxHighlighter>
             )}
-        </>
+        </div>
     );
 }
