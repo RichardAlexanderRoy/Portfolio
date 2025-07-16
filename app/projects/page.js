@@ -100,51 +100,53 @@ export default function About() {
                     )} */}
             <main className={styles.main}>
                 <MainOuter title="Projects">
+                    <MainInner>
                     <p>Here you will find a few of the projects I have done during my degree, if you would like to see a project that demonstrates proficiency in a specific language, please refer to the skills page where you can find links to projects based on the programming language or tool.</p>
+                    </MainInner>
                 </MainOuter>
                 <MainOuter id="project-python" title="Warcraft 1 remake">
                     <MainInner>
                         <h2>Skills:</h2>
-                        <h3>- Python</h3>
-                        <h3>- Pygame</h3>
+                        <p>- Python</p>
+                        <p>- Pygame</p>
                         <ProjectCodeWrapper fileArr={completePaths("CraftWar", craftWarCode)} onLoad={handleCodeLoaded} />
                     </MainInner>
                 </MainOuter>
                     <MainOuter id="project-cpp" title="Text Based RPG">
                         <MainInner>
                             <h2>Skills:</h2>
-                            <h3>- C++</h3>
+                            <p>- C++</p>
                             <ProjectCodeWrapper fileArr={completePaths("TextBasedRPG", textBasedRPGCode)} onLoad={handleCodeLoaded} />
                         </MainInner>
                     </MainOuter>
                 <MainOuter id="project-java" title="Chess:">
                     <MainInner>
                         <h2>Skills:</h2>
-                        <h3>- Java</h3>
+                        <p>- Java</p>
                         <ProjectCodeWrapper fileArr={completePaths("Chess", chessCode)} onLoad={handleCodeLoaded} />
                     </MainInner>
                 </MainOuter>
                 <MainOuter id="project-c" title="Simple Shell">
                     <MainInner>
                         <h2>Skills:</h2>
-                        <h3>- C</h3>
+                        <p>- C</p>
                         <ProjectCodeWrapper fileArr={completePaths("SimpleShell", Array("shell.c"))} onLoad={handleCodeLoaded} />
                     </MainInner>
                 </MainOuter>
                 <MainOuter id="project-swift" title="GuessNum">
                     <MainInner>
                         <h2>Skills: </h2>
-                        <h3>- Swift</h3>
+                        <p>- Swift</p>
                         <ProjectCodeWrapper fileArr={completePaths("GuessNum", Array("main.swift"))} onLoad={handleCodeLoaded} />
                     </MainInner>
                 </MainOuter>
                 <MainOuter id="project-javascript" title="This Site!">
-                    <MainInner>
+                    <MainInner className={styles.project}>
                         <h2>Skills:</h2>
-                        <h3>- JavaScript</h3>
-                        <h3>- React</h3>
-                        <h3>- Next.js</h3>
-                        <h3>- CSS</h3>
+                        <p>- JavaScript</p>
+                        <p>- React</p>
+                        <p>- Next.js</p>
+                        <p>- CSS</p>
                         <ProjectCodeWrapper fileArr={completePaths("ThisSite", thisSiteCode)} onLoad={handleCodeLoaded} />
                     </MainInner>
                 </MainOuter>

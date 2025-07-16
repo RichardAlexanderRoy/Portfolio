@@ -55,7 +55,7 @@ export default function CodeBlock({ filePath, visible, onLoad}) {
                 {isVisible ? ('Hide Code') : 'Show Code'}
             </button>
             {isVisible && (
-                <SyntaxHighlighter style={oneDark} customStyle={{margin: '5px auto', overflow: 'scroll', maxHeight: '500px', width: 'fit-content', maxWidth: '100%', padding: '5px 0px', border: '1px solid green'}} language={language}>
+                <SyntaxHighlighter style={oneDark} customStyle={{margin: '5px auto', overflow: 'scroll', maxHeight: '500px', width: 'fit-content', maxWidth: '100%', padding: '5px 5px', border: '1px solid green'}} language={language}>
                     {code}
                 </SyntaxHighlighter>
             )}

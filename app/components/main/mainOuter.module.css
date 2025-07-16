@@ -5,6 +5,7 @@
     width: fit-content;
     /* max-width: 75%; */
     margin: 0px auto 25px;
+    max-width: 100%;
 }
 
 .mainOuter .title {
@@ -17,5 +18,5 @@
 }
 
 .mainOuter p {
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
 }

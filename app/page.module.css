@@ -28,6 +28,8 @@
 .main p {
   margin: 4px;
   padding-top: 5px;
+  font-size: 1.15em;
+  text-align: left;
 }
 
 .main .navlink {
@@ -51,6 +53,9 @@
   font-size: 1.5rem;
 }
 
+.project p {
+  text-indent: 1.5em;
+}
 
 
 
