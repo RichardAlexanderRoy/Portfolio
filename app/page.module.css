@@ -35,7 +35,8 @@
 .main .navlink {
   color: white;
   display: block;
-  font-size: 1.5em;
+  font-size: 1.15em;
+  text-indent: 1.5em;
 }
 
 .loadingOverlay {
@@ -53,8 +54,8 @@
   font-size: 1.5rem;
 }
 
-.project p {
-  text-indent: 1.5em;
+.main a {
+  color: white;
 }
 
 

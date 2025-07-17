@@ -9,7 +9,9 @@ export default function About() {
             <main className={styles.main}>
                 <MainOuter title="Get in touch with me!">
                     <MainInner>
-                        <h2>Email: <span>richard.alex.roy@gmail.com</span></h2>
+                        <p>Email: <a href="mailto:Richard.Alex.Roy@gmail.com">Richard.Alex.Roy@gmail.com</a></p>
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/richardaroy" target="_blank">richardaroy</a></p>
+                        <p>GitHub: <a href="https://github.com/royri5" target="_blank">royri5</a></p>
                     </MainInner>
                 </MainOuter>
             </main>

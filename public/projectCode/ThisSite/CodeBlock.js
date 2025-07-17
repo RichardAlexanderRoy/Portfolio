@@ -1,12 +1,12 @@
 'use client'
-import React, { useEffect, useState } from 'react';
+import React, { useLayoutEffect, useEffect, useState } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import styles from "./codeBlock.module.css";
 const base = process.env.NODE_ENV === 'production' ? '/Portfolio' : '';
 
 
-export default function CodeBlock({ filePath, visible}) {
+export default function CodeBlock({ filePath, visible, onLoad}) {
     const [code, setCode] = useState('');
     const [isVisible, setIsVisible] = useState(visible);
     
@@ -42,17 +42,23 @@ export default function CodeBlock({ filePath, visible}) {
         .then(setCode)
     }, [filePath])
 
+    useLayoutEffect(() => {
+        if(code && onLoad) {
+            onLoad();
+        }
+    }, [code])
+
     return (
-        <>
+        <div className={styles.codeBlock}>
             <h3>{fileName}</h3>
             <button onClick={() => setIsVisible(!isVisible)}>
                 {isVisible ? ('Hide Code') : 'Show Code'}
             </button>
             {isVisible && (
-                <SyntaxHighlighter className={styles.codeBlock} language={language} style={oneDark}>
+                <SyntaxHighlighter style={oneDark} customStyle={{margin: '5px auto', overflow: 'scroll', maxHeight: '500px', width: 'fit-content', maxWidth: '100%', padding: '5px 5px', border: '1px solid green'}} language={language}>
                     {code}
                 </SyntaxHighlighter>
             )}
-        </>
+        </div>
     );
 }
