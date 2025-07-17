@@ -24,9 +24,8 @@ export default function About() {
                 </MainOuter>
                 <MainOuter title="Programming Tools">
                     <MainInner>
+                        <p>- Command Line Interface</p>
                         <p>- JUnit Tests</p>
-                        <p>- Node.js</p>
-                        <p>- Next.js</p>
                         <p>- React</p>
                         <p>- Vim</p>
                         <p>- Git</p>
@@ -50,7 +49,6 @@ export default function About() {
                         <p>- React</p>
                         <p>- Next.js</p>
                         <p>- Node.js</p>
-                        <p>- Express.js</p>
                     </MainInner>
                 </MainOuter>
                 <MainOuter title="Operating Systems">
