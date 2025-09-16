@@ -3,6 +3,11 @@ import styles from "./page.module.css";
 import MainOuter from "./components/main/MainOuter.js";
 import MainInner from "./components/main/MainInner.js";
 
+
+//TODO: Add relevant coursework section
+//      Add pictures & videos of projects
+//      Change github link/add personal link
+//      Channge gpa, change graduation date
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -10,7 +15,7 @@ export default function Home() {
         <MainOuter title="Hi! I'm Richard Roy, Welcome To My Portfolio!">
           <MainInner>
             <h2>Computer Science Senior/Aspiring Software Engineer</h2>
-            <p>I'm currently a senior studying Computer Science with a strong passion for full-stack development, AI, and the intersection of neuroscience and computing. I'm actively looking for internship opportunities for Fall, Winter, or Spring/Summer semesters.</p>
+            <p>I'm currently a senior studying Computer Science with a strong passion for full-stack development, AI, and the intersection of neuroscience and computing. As I have secured my internship for this Winter, I expect to graduate May 2026. I am happy to say that I am finally looking for my first career role, hoping to begin work during the early summer/spring of 2026.</p>
             <p>This portfolio is a collection of what I’ve built, what I’m learning, and where I’m heading.</p>
             <p>- On the About page, you'll find my degree information, work experience, and my freelance gigs.</p>
             <p>- On the Projects page, you'll find a collection of projects and code examples — from university coursework to personal projects</p>
@@ -22,13 +27,10 @@ export default function Home() {
         <MainOuter title="Positions I'm Interested In">
           <MainInner>
             <h2>Software Engineer/Developer:</h2>
-            <p>- Fullstack Developer Intern</p>
-            <p>- Frontend Developer Intern</p>
-            <p>- Backend Developer Intern</p>
-            <p>- Web Developer Intern</p>
-            <h2>Information Technology(IT):</h2>
-            <p>- IT Support Intern</p>
-            <p>- IT Technician Intern</p>
+            <p>- Fullstack Developer</p>
+            <p>- Backend Developer</p>
+            <p>- Frontend Developer</p>
+            <p>- Web Developer</p>
           </MainInner>
         </MainOuter>
         <MainOuter title="Career Goals">
