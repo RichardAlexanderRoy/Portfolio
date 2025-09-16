@@ -36,8 +36,8 @@ export default function Home() {
         <MainOuter title="Career Goals">
           <MainInner>
             <h2>Short Term Goals:</h2>
-            <p>- Obtain Computer Science Related Internship for University credit</p>
             <p>- Graduate with a Bachelor of Science in Computer Science</p>
+            <p>- Land my first career role as a Software Engineer/Developer</p>
             <h2>Long Term Goals:</h2>
             <p>- Obtain a PhD in Computer Science</p>
             <p>- Work in a research and development position</p>
