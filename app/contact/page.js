@@ -11,7 +11,7 @@ export default function About() {
                     <MainInner>
                         <p>Email: <a href="mailto:Richard.Alex.Roy@gmail.com">Richard.Alex.Roy@gmail.com</a></p>
                         <p>LinkedIn: <a href="https://www.linkedin.com/in/richardaroy" target="_blank">richardaroy</a></p>
-                        <p>GitHub: <a href="https://github.com/royri5" target="_blank">royri5</a></p>
+                        <p>GitHub: <a href="https://github.com/royri5" target="_blank">RichardAlexanderRoy</a>, <a href="https://github.com/RichardAlexanderRoy" target="_blank">royri5</a></p>
                     </MainInner>
                 </MainOuter>
             </main>
