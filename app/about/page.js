@@ -10,8 +10,8 @@ export default function About() {
             <main className={styles.main}>
                 <MainOuter title="Education">
                     <MainInner>
-                        <h2>Grand Valley State University <span style={{fontSize: '0.6em'}}>- Expected December 2025, GPA - 3.706</span></h2>
-                        <h2 style={{fontSize: '1.5em'}}>Bachelor of Science - Major in Computer Science, Minor in Mathematics</h2>
+                        <h2>Grand Valley State University <span style={{fontSize: '0.6em'}}>- Expected May 2026, GPA - 3.706</span></h2>
+                        <h2 style={{fontSize: '1.5em'}}>Bachelor of Science <span style={{fontSize: '0.6em'}}>- Major in Computer Science, Minor in Mathematics</span></h2>
                     </MainInner>
                 </MainOuter>
                 <MainOuter title="Work Experience">
