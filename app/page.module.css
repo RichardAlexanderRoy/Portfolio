@@ -41,6 +41,7 @@
   margin: 0.25rem;
   padding-top: 0.25rem;
   font-size: 1.15rem;
+  text-indent: 1rem;
   /* text-align: left; */
 }
 
@@ -51,7 +52,7 @@
   margin: 0.25rem;
   padding-top: 0.25rem;
   text-align: left;
-  /* text-indent: 1.5rem; */
+  text-indent: 1rem;
 }
 
 .loadingOverlay {
