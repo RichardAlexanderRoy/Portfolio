@@ -1,10 +1,15 @@
 .mainOuter {
     border: 1px solid rgb(0,255,155);
-    border-radius: 5px;
-    padding: 15px 100px;
+    /* border-radius: 5px; */
+    border-radius: 0.25rem;
+    /* padding: 15px 100px; */
+    /* padding: 1rem 5rem; */
+    padding: 1rem 1rem;
     width: fit-content;
     /* max-width: 75%; */
-    margin: 0px auto 25px;
+    /* margin: 0px auto 25px; */
+    /* margin: 0 auto 1.5rem; */
+    margin: 1rem auto;
     max-width: 100%;
 }
 
@@ -14,7 +19,7 @@
     margin: 0px auto;
     border-bottom: 1px solid rgb(0,255,155);
     width: fit-content;
-    font-size: 3em;
+    font-size: 2rem;
 }
 
 .mainOuter p {

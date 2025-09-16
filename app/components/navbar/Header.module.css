@@ -3,22 +3,32 @@
     display: flex;
     justify-content: center;
     background-color: rgb(0,255,155);
-    padding: 4px 0px;   
+    /* padding: 4px 0px;    */
+    padding: 0.5rem 0;
+    max-width: 100%;
+    overflow: hidden;
 }
 .navbar a {
     color: rgb(0,0,0);
-    padding: 2px 5px;
+    /* padding: 2px 5px; */
+    /* padding: 0.25rem 0.5rem; */
+    
     /* border: 2px solid black;
     border-radius: 2px; */
-    margin: 1px 20px;
-    font-size: 25px;
+    /* margin: 1px 20px;
+    font-size: 25px; */
+    /* margin: 0 1rem; */
+    margin: 0 auto;
+    font-size: 1.25rem;
     font-weight: 700;
     text-decoration: none;
     border: 1px solid rgb(0,255,155);
+    width: fit-content;
 }
 
 .navbar a:hover {
     background-color: rgb(151, 226, 185);
     border: 1px solid rgb(136, 209, 169);
-    border-radius: 3px;
+    /* border-radius: 3px; */
+    border-radius: 0.25rem;
 }
